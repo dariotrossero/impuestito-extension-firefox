@@ -1,4 +1,4 @@
-chrome.runtime.onMessage.addListener((msg, sender, response) => {
+browser.runtime.onMessage.addListener((msg, sender, response) => {
   if (msg === "GET_DOLLAR_OFFICIAL") {
     const url = "https://mercados.ambito.com/dolar/oficial/variacion";
     fetch(url)

@@ -44,6 +44,7 @@ Impuestito toma el precio original de cada juego en distintas tiendas online y h
 - Brave
 - Vivaldi
 - Chromium
+- Firefox (en progreso)
 
 > Nota: debería ser compatible con cualquier browser basado en [Chromium](<https://es.wikipedia.org/wiki/Chromium_(navegador)>)
 

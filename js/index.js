@@ -30,11 +30,13 @@ if (devMode) {
   impuestitoDollar = impuestitoDollarMock;
   impuestitoTaxes = impuestitoTaxesMock;
 } else {
-  chrome.runtime.sendMessage("GET_DOLLAR_OFFICIAL", (response) => {
+  browser.runtime.sendMessage("GET_DOLLAR_OFFICIAL", (response) => {
     impuestitoDollar = response;
+    console.log("Dollar value: " + JSON.stringify(impuestitoDollar.data))
   });
-  chrome.runtime.sendMessage("GET_TAXES", (response) => {
+  browser.runtime.sendMessage("GET_TAXES", (response) => {
     impuestitoTaxes = response;
+    console.log("Taxes value: " + JSON.stringify(impuestitoTaxes.data))
   });
 }
 
